@@ -4,6 +4,7 @@ func GoodPairs(nums []int) int {
 	pairCount := 0
 	pairCountMap := make(map[int]int)
 	for _, num := range nums {
+		pairCountMap[num]++
 		if count, ok := pairCountMap[num]; ok {
 			if count > 1 {
 				pairCount = updateCount(pairCount, count)
