@@ -14,7 +14,9 @@ func main() {
 	// testCase := "12345"
 	// result := warmup.ValidPalindrome(testCase)
 	// fmt.Println(result)
-	arr := []int{2, 3, 3, 3, 6, 9, 9}
-	result := twopointers.NonDuplicateNumbersInstance(arr)
+	// arr := []int{2, 3, 3, 3, 6, 9, 9}
+	// result := twopointers.NonDuplicateNumbersInstance(arr)
+	arr := []int{-2, -1, 0, 2, 3}
+	result := twopointers.SquaringSortedArray(arr)
 	fmt.Println(result)
 }
