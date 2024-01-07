@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/cecarbs/dsa/internal/warmup"
+	twopointers "github.com/cecarbs/dsa/internal/two-pointers"
 )
 
 func main() {
@@ -14,7 +14,7 @@ func main() {
 	// testCase := "12345"
 	// result := warmup.ValidPalindrome(testCase)
 	// fmt.Println(result)
-	s := "paper"
-	t := "repaap"
-	fmt.Println(warmup.ValidAnagram(s, t))
+	arr := []int{2, 3, 3, 3, 6, 9, 9}
+	result := twopointers.NonDuplicateNumbersInstance(arr)
+	fmt.Println(result)
 }
